@@ -1,0 +1,84 @@
+
+
+h1{
+  text-align: center;
+  color:#FF5349;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  text-align: center;
+  color: black; 
+}
+
+.login-card {
+  background: white; 
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+button {
+  padding: 12px;
+  background-color: #FF5349;;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.input-group{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group input{
+  border-radius: 5px;
+  font-size:20px;
+  margin-top:5px;
+  padding:10px;
+  border:1px solid rgb(34,193,195) ;
+}
+
+.input-group input:focus{
+  outline:0;
+}
+
+.input-group .error{
+  color:rgb(242, 18, 18);
+  font-size:16px;
+  margin-top: 5px;
+}
+
+.input-group.success input{
+  border-color: #0cc477;
+}
+
+.input-group.error input{
+  border-color:rgb(206, 67, 67);
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: #dfdfdf;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+}
+
+.wrapper .right {
+    width: 25%; /* Take the full width */
+    padding: 30px;
+    background: #fff;
+}
+
+.wrapper .right .tabs ul {
+    text-align: center;
+}
+
+.wrapper .right .tabs ul li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.wrapper .right .tabs ul li.active {
+    border-bottom: 2px solid black;;
+}
+
+.wrapper .right .register,
+.wrapper .right .login {
+    margin-top: 20px;
+}
+
+.wrapper .right .input_field {
+    margin-bottom: 15px;
+}
+
+.wrapper .right .input_field .input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    font-size: 12px;
+    background: #ecebeb;
+}
+
+.wrapper .right .btn {
+    margin-top: 20px;
+    background: #FF5349;;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.wrapper .right .btn a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+}
+
+.login-container {
+    text-align: center;
+    color: black; 
+  }
+  
+  .login-card {
+    background: white; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }

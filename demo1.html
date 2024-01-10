@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="demo1.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="demo1.js" defer></script>
+    <title>Registration and Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="right">
+            <div class="tabs">
+                <ul>
+                    <li class="register_li active">Register</li>
+                    <li class="login_li">Login</li>
+                </ul>
+            </div>
+
+            <div class="register">
+                
+                <div class="input_field">
+                    <label for="name"><i class="fas fa-user"></i></label>
+                    <input type="text" id="name" name="name" required placeholder="Name">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="E-mail" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="password" placeholder="Password" class="input">
+                </div>
+                <div class="btn"><a href="#">Register</a></div>
+            </div>
+
+            <div class="login">
+                <div class="input_field">
+                    <input type="text" placeholder="E-mail" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="password" placeholder="Password" class="input">
+                </div>
+                <div class="btn"><a href="#">Login</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
