@@ -105,18 +105,3 @@ function isPasswordValid(password) {
   return true;
 }
 
-
-function flipCard() {
-  var flipCard = document.querySelector('.flip-card');
-  flipCard.classList.toggle('flipped');
-}
-
-function validateLoginForm() {
-  // Your login form validation logic goes here
-  return true; // Placeholder, replace with actual validation
-}
-
-function validateSignUpForm() {
-  // Your sign-up form validation logic goes here
-  return true; // Placeholder,
-}

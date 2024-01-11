@@ -12,6 +12,7 @@
 
 body {
     background: #dfdfdf;
+    
 }
 
 .wrapper {
@@ -48,11 +49,14 @@ body {
 
 .wrapper .right .register,
 .wrapper .right .login {
-    margin-top: 20px;
+    border-radius: 10px; /* Add border-radius */
+  
 }
 
 .wrapper .right .input_field {
     margin-bottom: 15px;
+    border-radius: 10px; /* Add border-radius */
+    overflow: hidden;
 }
 
 .wrapper .right .input_field .input {
@@ -61,6 +65,7 @@ body {
     border: 0;
     font-size: 12px;
     background: #ecebeb;
+    border-radius: 8px;
 }
 
 .wrapper .right .btn {
@@ -90,3 +95,51 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.checkbox {
+    margin-top: 10px;
+}
+button {
+    padding: 12px;
+    background-color: #FF5349;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
