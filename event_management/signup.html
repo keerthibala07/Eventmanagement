@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="error.css">
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="ripple-background">
+        <div class="circle small shade1"></div>
+        <div class="circle medium shade2"></div>
+        <div class="circle large shade3"></div>
+        <div class="circle xlarge shade4"></div>
+        <div class="circle xxlarge shade5"></div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Sign Up</h2>
+            <form id="signupForm" onsubmit="handleFormSubmission('signup')" method="post" novalidate>
+
+
+                <div class="input-group">
+                    <label for="name"><i class="fas fa-user"></i></label>
+                    <input type="text" id="name" name="name" required placeholder="Name">
+                    
+                </div>
+                <div class="error-message" id="nameError"></div>
+                <!--div class="input-group">
+                    <label for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                    
+                </div-->
+                <div class="input-group">
+                    <label for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </div>
+                <div class="error-message" id="emailError"></div>
+                
+                <div class="input-group">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                    
+                </div>
+                <div class="error-message" id="passwordError"></div>
+                <div class="input-group">
+                    <label for="confirmPassword"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required
+                        placeholder="Confirm Password">
+
+                </div>
+                <div class="error-message" id="confirmPasswordError"></div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    <label for="privacyPolicy">I agree to the privacy policy</label>
+                </div>
+                <div class="error-message" id="privacyPolicyError"></div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+            <p>or</p>
+            <div id="google"><i class="fab fa-google"></i></div>
+            
+        </div>
+        
+          
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>
