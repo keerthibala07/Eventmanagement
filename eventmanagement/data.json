@@ -1,0 +1,22 @@
+[
+    {
+        "imageName": "event_stage.jpg",
+        "eventName": "Event Name 1",
+        "department": "Department of Computer Science"
+    },
+    {
+        "imageName": "event_stage.jpg",
+        "eventName": "Event Name 2",
+        "department": "Department of Physics"
+    },
+    {
+        "imageName": "event_stage.jpg",
+        "eventName": "Event Name 3",
+        "department": "Department of Chemistry"
+    },
+    {
+        "imageName": "event_stage.jpg",
+        "eventName": "Event Name 4",
+        "department": "Department of Biology"
+    }
+]

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="event_registration.css">
+    <script src="event_registration.js" defer></script>
+    <title>Your Website</title>
+</head>
+<body>
+    <header>
+        <span><img src="event_logo.png" alt="Event Logo"></span>
+        
+    </header>
+    <div class="container">
+        <div class="small-button-container">
+            <button class="small-button"><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="text">
+            <h2>CRESCITA</h2>
+            <p id="dep">Department of Computer Science and Engineering</p>
+        
+            <div class="navbar">
+                <a href="javascript:void(0);" class="nav-item" onclick="showOverview()">Overview</a>
+                <a href="javascript:void(0);" class="nav-item" onclick="showEvents()">Events</a>
+                <a href="javascript:void(0);" class="nav-item" onclick="showSchedule()">Schedule</a>
+                <a href="javascript:void(0);" class="nav-item" onclick="showContact()">Contact</a>
+            </div>
+           
+            <div id="over">
+                <p>Crescita is a national-level symposium conducted every year by the Computer Science and Engineering department of Kongu Engineering College. Crescita, a great platform to showcase your innovative ideas and enhance your technical skills, features both technical and fun events. Crescita consistently excels in identifying the best in individuals and rewarding them accordingly. We warmly welcome you all to challenge yourselves in various areas.</p>
+            </div>
+            <div id="events-columns" style="display: none;">
+                <!-- Empty container for dynamic content -->
+            </div>
+            <div id="schedule" style="display: none;">
+                
+                <ul> 
+                    <li><strong>Start Date:</strong> January 3, 2024</li><br>
+                    <li><strong>End Date:</strong> January 3, 2024</li><br>
+                    <li><strong>Timings:</strong> 9:00 AM - 5:00 PM</li>
+                </ul> 
+                <h4>Registration closes at 6:00 PM on January 2, 2024</h4>
+                <h4>Venue: Kongu Engineering College</h4>
+                <h4>All events: Online</h4>
+            </div>
+            <div id="contact" style="display: none;">
+                <h4>Contact Information:</h4>
+                <p><i class="fa fa-envelope" style="margin-right: 5px; color: black;"></i>  info@crescitaevent.com</p>
+                <p><i class="fa fa-phone" style="margin-right: 5px; color: black;"></i> Secretary : +91 123 456 7890</p>
+                <p><i class="fa fa-phone" style="margin-right: 5px; color: black;"></i> Joint Secretary : +91 123 456 7890</p>
+            </div>
+        </div>
+           
+            <button id="button">Register</button>
+           
+        
+        <div class="poster">
+            <img src="https://images.pexels.com/photos/3696395/pexels-photo-3696395.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Poster">
+        </div>
+      
+    </div>
+
+    <div id="popular-events">
+        <p>Other Events</p>
+    </div> 
+
+    <div class="slide-container">
+        <div class="slide-content">
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/3696395/pexels-photo-3696395.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Infocruise</h2>
+                        <p class="description">Department of Computer Science</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/3696395/pexels-photo-3696395.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Rennaisance</h2>
+                        <p class="description">Department of Computer Science</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/3696395/pexels-photo-3696395.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">MXCEL</h2>
+                        <p class="description">Department of Mechanical</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Card -->
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/3696395/pexels-photo-3696395.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Electromind</h2>
+                        <p class="description">Department of Electrical and Electronics</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/3696395/pexels-photo-3696395.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Epoch </h2>
+                        <p class="description">Department of Information Technology</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/3696395/pexels-photo-3696395.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Event Name 3</h2>
+                        <p class="description">Department of Chemistry</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Card -->
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/3696395/pexels-photo-3696395.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Event Name 4</h2>
+                        <p class="description">Department of Biology</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <button class="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <div class="additional-container">
+        <div class="card">
+            <h2>Rate Us</h2>
+           
+            <span onclick="gfg(1)"
+                  class="star">★
+            </span>
+            <span onclick="gfg(2)"
+                  class="star">★
+            </span>
+            <span onclick="gfg(3)"
+                  class="star">★
+            </span>
+            <span onclick="gfg(4)"
+                  class="star">★
+            </span>
+            <span onclick="gfg(5)"
+                  class="star">★
+            </span>
+            <h3 id="output">
+                  Rating is: 0/5
+              </h3>
+        
+        <button id="btn">Submit</button><br>
+    </div>
+    </div>
+    <footer>
+        <p>Developed by Logitech Group</p>
+        <p id="foot" class="contact-icons">
+            <i class="fas fa-envelope" ></i>
+            <i class="fab fa-whatsapp" ></i>
+            <i class="fas fa-phone" ></i>
+        </p>
+    </footer>
+    
+
+</body>
+</html>

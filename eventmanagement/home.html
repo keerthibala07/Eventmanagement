@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <span><img src="event_logo.png" alt="Event Logo"></span>
+        <button class="button">Add Event</button>
+    </header>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-text">
+                <p>Discover Exciting Events</p>
+                <p id="exp">Explore a world of talents</p>
+            </div>
+            <img src="event_stage.jpg" alt="Event Image">
+        </div>
+    </div>
+
+    <div class="card overlapping-card">
+        <div class="filter-text">Filter by department</div>
+        <button class="filter-button"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <div id="popular-events">
+        <p>Popular Events</p>
+    </div> 
+
+    <div class="slide-container">
+        <div class="slide-content">
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="event_stage.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Event Name</h2>
+                        <p class="description">Department of Computer Science</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="event_stage.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Event Name 2</h2>
+                        <p class="description">Department of Physics</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="event_stage.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Event Name 3</h2>
+                        <p class="description">Department of Chemistry</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Card -->
+            <div class="card-wrapper">
+                <div class="card-now">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="event_stage.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Event Name 4</h2>
+                        <p class="description">Department of Biology</p>
+                        <button class="view">View</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>Developed by Logitech Group</p>
+        <p id="foot">Your ultimate event management group</p>
+    </footer>
+    
+    <script src="home.js"></script>
+</body>
+</html>
